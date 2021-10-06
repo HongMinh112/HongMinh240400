@@ -1,0 +1,387 @@
+@media screen and (min-width:740px) {
+    .header{
+        background-color: cornsilk;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Header*/
+.header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.header_left{
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.header_left a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.header_middle{
+    font-size: 20px;
+    padding-top: 11px;
+}
+
+.header_middle input{
+    width: 420px;
+    border-radius: 8px;
+    height: 20px;
+}
+.header_cart{
+    padding-top: 13px;
+}
+.header_cart-elment{
+    font-size: 25px;
+    padding-right: 20px;
+}
+.header_cart-elment a:hover{
+    color: black;
+}
+.header_cart-elment a{
+    text-decoration: none;
+}
+.header_right{
+    padding-top: 13px;
+    padding-right: 10px;
+}
+.header_right a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: rgb(211, 255, 167);
+}
+.header_right a:hover{
+    background-color: white;
+}
+.header_right-ul{
+    display: flex;
+    font-size: 20px;
+    color: black;
+}
+.header_right-signUp {
+    list-style: none;
+    padding-right: 15px;
+}
+.header_right-signIn{
+    list-style: none;
+}
+/* Login */
+.signUp{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: cadetblue;
+    display: none;
+}
+.mystyle{
+    display: block;
+    z-index: 9999;
+}
+.signUp h2{
+    text-align: center;
+    padding: 10px;
+}
+.signUp_list-input{
+    padding: 8px 30px;
+}
+.signUp_list-input input{
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+.signUp_list-button{
+    text-align: center;
+}
+.signUp_list-button button{
+    font-size: 20px;
+    background-color: chartreuse;
+}
+.signIn{
+    background-color: cadetblue;
+    border: 2px solid black;
+    position: absolute;
+    height: 180px;
+    width: 300px;
+    top: 40px;
+    right: 30px;
+    opacity: 0;
+    display: none;
+}
+.mystyle1{
+    opacity: 1;
+    display: block;
+    z-index: 9999;
+}
+.signIn h2{
+    text-align: center;
+    padding: 10px 0;
+}
+.signIn_list-input input{
+    font-size: 20px;
+}
+.signIn_list-input{
+    padding: 8px 22px;
+}
+.signIn_list-button{
+    text-align: center;
+    font-size: 30px;
+    
+}
+.signIn_list-button button{
+    background-color: chartreuse;
+    font-size: 20px;
+}
+/*Menu*/
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+    display: flex;
+}
+.menu_left{
+    font-size: 29px;
+    padding-left: 30px;
+    padding-top: 12px;
+}
+.menu_list-item{
+    display: flex;
+}
+.menu_list-item li{
+    padding-top: 38px;
+    padding-left: 30px;
+    margin-left: 30px;
+    list-style: none;
+}
+.menu_list-item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.menu_list-item a:hover{
+    color: white;
+}
+/*navbar*/
+.navbar_left-item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.menu_list-item-navbar{
+    position: absolute;
+    z-index: 1000;
+}
+.navbar_left-item{
+    background-color: cadetblue;
+    font-size: 20px;
+    display: none;
+    text-align: center;
+}
+.menu_list-item--product:hover .navbar_left-item{
+    display: block;
+}
+.navbar_left-item a:hover{
+    color: white;
+}
+.navbar_left-item li{
+    border-bottom: 1px solid black;
+    list-style: none;
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+/*ảnh quản cáo*/
+.navbar_right-header img{
+    width: 100%;
+    height: 520px;
+}
+.navbar_right-header{
+    overflow: hidden;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+.navbar_right-header .active{
+    opacity: 1;
+}
+.bien_mat_ben_trai{
+    animation: bien_mat_ben_trai 1s forwards;
+}
+@keyframes bien_mat_ben_trai{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.bien_mat_ben_phai{
+    animation: bien_mat_ben_phai 1s forwards;
+}
+@keyframes bien_mat_ben_phai{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.left_right{
+    justify-content: space-between;
+    padding-top: 230px;
+}
+.left{
+    z-index: 19;
+    position: absolute;
+    font-size: 25px;
+    opacity: 0.5;
+}
+.right{
+    padding-left: 1244px;
+     z-index: 15;
+    position: absolute;
+    opacity: 0.5;
+}
+.right_button{
+    font-size: 25px;
+}
+.slideshow-container{
+    max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.nav_dots{
+    text-align: center;
+    position: absolute;
+    z-index: 20;
+    margin-top: 250px;
+    margin-left: 600px;
+}
+.dots{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+/*Product*/
+.product{
+    padding-left: 10px;
+    text-align: center;
+    padding-top: 300px;
+}
+.product_include h3{
+    font-size: 25px;
+    padding: 10px 0;
+}
+.product_list-item img{
+    height: 190px;
+    width: 160px;
+}
+.product_header{
+    padding: 20px 0;
+}
+.product_header-h1{
+    text-align: center;
+}
+.product_list{
+    display: flex;
+}
+.product_list-item{
+    border: 1px solid black;
+    padding: 0 47px;
+    text-align: center;
+}
+.product_list-item p{
+    color: red;
+}
+.product_list-item a{
+    text-decoration: none;
+}
+.product_list-item button{
+    background-color: greenyellow;
+    height: 30px;
+}
+.product_list-item button:hover{
+    background-color: hotpink;
+}
+.product_list-item7{
+    border: 1px solid black;
+    padding-left: 50px;
+    text-align: center;
+}
+.product_list-item7 p{
+    color: red;
+}
+.product_list-item7 a{
+    text-decoration: none;
+}
+.product_list-item7 button{
+    background-color: greenyellow;
+    height: 30px;
+}
+.product_list-item7 button:hover{
+    background-color: hotpink;
+}
+.product_list-item7 img{
+    height: 190px;
+    width: 160px;
+}
+.product_list-box{
+    display: flex;
+}
+/* FOOTER */
+.footer{
+    padding-top: 15px;
+    height: 230px;
+}
+.footer_commit{
+    padding: 0 10px;
+}
+.footer_commit-item{
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+}
+.footer_commit-item h3{
+    padding-top: 17px;
+    padding-left: 5px;
+}
+.footer_commit-item img{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.footer_commit-item span{
+    padding-top: 20px;
+}
+.footer_list{
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+}
+.footer_list-item{
+    padding: 0 70px;
+}
+.footer_list-item li{
+    list-style: none;
+}
+.footer_list-item ul li{
+    padding: 7px 0;
+}

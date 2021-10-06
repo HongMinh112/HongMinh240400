@@ -1,0 +1,14 @@
+.menu_left h1{
+    animation: lightningflash 2s infinite;
+}
+@keyframes lightningflash{
+    0%{color: red;}
+    50%{color: yellow;}
+    75%{color: blue;}
+}
+.header_left a{
+    animation: lightningflash 2s infinite;
+}
+.form_convert{
+    animation: lightningflash 2s infinite;
+}
